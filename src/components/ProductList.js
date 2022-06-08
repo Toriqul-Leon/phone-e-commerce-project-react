@@ -1,11 +1,8 @@
-import React, { useState } from "react";
 import Title from "./Title";
-import { storeProducts } from "../data";
 import { ProductConsumer } from "../Context";
+import Product from "./Product";
 
 const ProductList = () => {
-  const [products, setProducts] = useState(storeProducts);
-  console.log(products);
   return (
     <div>
       <div className="py-5">
@@ -14,13 +11,14 @@ const ProductList = () => {
           <div className="row">
             <ProductConsumer>
               {(value) => {
-                return <h1>{value}</h1>;
+                return value.products.map((product) => {
+                  return <Product key={product.id} product={product} />;
+                });
               }}
             </ProductConsumer>
           </div>
         </div>
       </div>
-      {/* <Product /> */}
     </div>
   );
 };
