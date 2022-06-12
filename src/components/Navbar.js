@@ -6,7 +6,7 @@ import { ButtonContainer } from "./Button";
 
 const Navbar = () => {
   return (
-    <NavWrapper className="navbar navbar-expand-sm navbar-dark px-sm-5">
+    <NavWrapper className="navbar navbar-expand-sm navbar-dark px-sm-5 d-flex justify-content-between">
       <Link to="/">
         <img src={logo} alt="store" className="navbar-brand" />
       </Link>
