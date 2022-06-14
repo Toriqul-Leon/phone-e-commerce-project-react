@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 import ProductList from "./components/ProductList";
 import Details from "./components/Details";
 import Default from "./components/Default";
-import Cart from "./components/Cart";
+import Cart from "./components/Cart/Cart";
 import { Route, Routes } from "react-router-dom";
 import Modal from "./components/Modal";
 

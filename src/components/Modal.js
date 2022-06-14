@@ -36,6 +36,7 @@ const Modal = () => {
                   </Link>
                   <Link to="/cart">
                     <ButtonContainer
+                      onClick={closeModal}
                       cart
                       className="btn btn-outline-success text-capitalize mx-2"
                     >
