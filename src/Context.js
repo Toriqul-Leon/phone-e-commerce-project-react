@@ -65,7 +65,7 @@ class ProductProvider extends Component {
         };
       },
       () => {
-        console.log(this.state);
+        this.addTotals();
       }
     );
   };
@@ -156,7 +156,7 @@ class ProductProvider extends Component {
       },
       //! setState is a method
       () => {
-        this.addTotals();
+        this.setProducts();
       }
     );
   };
