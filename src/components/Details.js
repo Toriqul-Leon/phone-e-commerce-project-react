@@ -40,6 +40,7 @@ const Details = () => {
                   <ButtonContainer
                     onClick={() => {
                       value.addToCart(id);
+                      value.openModal(id);
                     }}
                     cart
                     disabled={inCart ? true : false}
