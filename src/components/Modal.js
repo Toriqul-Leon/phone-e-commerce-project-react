@@ -31,11 +31,14 @@ const Modal = () => {
                       onClick={closeModal}
                       className="btn btn-outline-danger text-capitalize mx-2"
                     >
-                      continue shopping
+                      Store
                     </ButtonContainer>
                   </Link>
                   <Link to="/cart">
-                    <ButtonContainer className="btn btn-outline-success text-capitalize mx-2">
+                    <ButtonContainer
+                      cart
+                      className="btn btn-outline-success text-capitalize mx-2"
+                    >
                       go to cart
                     </ButtonContainer>
                   </Link>
